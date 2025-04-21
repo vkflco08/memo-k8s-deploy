@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: memo-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: memo-app
+  template:
+    metadata:
+      labels:
+        app: memo-app
+    spec:
+      containers:
+        - name: memo-app
+          image: "vkflco08/memo-app:latest"
+          ports:
+            - containerPort: 8181
