@@ -4,4 +4,4 @@ resources:
 
 images:
   - name: vkflco08/memo-app
-    newTag: "123"
+    newTag: latest
