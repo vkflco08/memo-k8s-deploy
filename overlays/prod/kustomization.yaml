@@ -6,3 +6,11 @@ namespace: memo-prod
 images:
   - name: vkflco08/memo-app
     newTag: prod-latest
+
+# ArgoCD Image Updater 설정
+metadata:
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: "vkflco08/memo-app"
+    argocd-image-updater.argoproj.io/vkflco08.meno-app.update-strategy: "latest"
+    argocd-image-updater.argoproj.io/write-back-method: "git"
+    argocd-image-updater.argoproj.io/git-branch: "main"
