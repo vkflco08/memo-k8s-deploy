@@ -5,7 +5,7 @@ namespace: memo-prod
 
 images:
   - name: vkflco08/memo-app
-    newTag: build-36-20250508080328
+    newTag: build-37-20250508085705
 
 # ArgoCD Image Updater 설정
 metadata:
