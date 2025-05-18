@@ -46,6 +46,7 @@ memo-k8s-deploy/
 
 ### 🔁 배포 플로우
 
+```text
 [1] GitHub 코드 푸시 (BE-memo-app 저장소)
       ↓ Webhook
 [2] Jenkins CI 파이프라인 실행
@@ -54,6 +55,7 @@ memo-k8s-deploy/
       ↓ GitOps Repo 커밋
 [4] ArgoCD가 GitOps Repo 변경을 감지하고 자동 배포
       ↓ k3s에 배포 완료
+```
 
 ### 🔐 배포 이력 관리
 - Docker 이미지에 태그를 부여하여 명확한 배포 이력 관리 가능
