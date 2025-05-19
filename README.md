@@ -1,4 +1,4 @@
-#🚀 memo-k8s-deploy
+# 🚀 memo-k8s-deploy
 
 Spring Boot 기반 메모 애플리케이션(BE-memo-app)을 쿠버네티스 환경에 배포하기 위한 CI/CD 설정 저장소입니다.
 Docker, Jenkins, Kubernetes(k3s), ArgoCD, GitOps를 활용하여 자동화된 배포 파이프라인을 구성하였습니다.
