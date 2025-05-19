@@ -8,9 +8,13 @@ Docker, Jenkins, Kubernetes(k3s), ArgoCD, GitOps를 활용하여 자동화된 �
 ## 🌟 주요 특징
 
 ✅ GitOps 기반 자동 배포: Git 저장소 변경을 기반으로 ArgoCD가 자동으로 Kubernetes에 배포
+
 ✅ Jenkins CI/CD 파이프라인 연동: 코드 푸시 → 이미지 빌드 및 푸시 → CD 태그 전달 → GitOps 배포
+
 ✅ k3s 경량 클러스터 사용: 개인 서버에서 경량화된 쿠버네티스 운영
+
 ✅ Docker 이미지 버전 관리: 태그 기반의 이미지 이력 관리 및 안정적인 롤백
+
 ✅ Kustomize 지원: 환경별 설정을 분리하고 선언적으로 관리 가능
 
 ⸻
@@ -60,14 +64,3 @@ memo-k8s-deploy/
 ### 🔐 배포 이력 관리
 - Docker 이미지에 태그를 부여하여 명확한 배포 이력 관리 가능
 - 롤백 시 이전 태그의 이미지로 즉시 복원 가능
-
-⸻
-
-## 🗂️ 쿠버네티스 핵심 개념 요약
-
-- Pod	가장 작은 배포 단위. 하나 이상의 컨테이너 포함
-- Service	Pod IP 고정을 위한 엔드포인트 제공
-- Deployment	Pod 선언적 관리, 자동 재시작 및 롤링 업데이트
-- Namespace	논리적 리소스 구분
-- ArgoCD	GitOps 기반 배포 관리 툴
-- Kustomize	환경별 선언적 설정 도구 (base/overlay 구조)
